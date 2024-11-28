@@ -52,8 +52,10 @@
             display: flex;
             justify-content: center;
             background: #9d794d;
-            padding: 10px 0;
+            padding: 10px 20px; /* Отступы для меню */
             flex-wrap: wrap;
+            max-width: 1200px; /* Совпадает с остальным текстом */
+            margin: 0 auto; /* Центрирование */
         }
         nav a {
             color: #fff;
@@ -65,7 +67,7 @@
             text-decoration: underline;
         }
         .container {
-            max-width: 100%;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background: #fff;
@@ -87,7 +89,7 @@
         }
         footer {
             text-align: center;
-            padding: 10px 0;
+            padding: 10px 20px;
             background: #9d794d;
             color: #fff;
             margin-top: 20px;
