@@ -1,6 +1,6 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="manifest" href="manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фасад-дизайн</title>
@@ -25,14 +25,15 @@
         header .content {
             display: flex;
             align-items: center;
-            width: 1200px;
+            max-width: 1200px;
+            width: 100%;
         }
         header .logo {
             flex: 0 0 auto;
-            margin-right: 30px;
+            margin-right: 20px;
         }
         header .logo img {
-            width: 202px;
+            width: 150px;
         }
         header .text {
             flex: 1;
@@ -41,11 +42,11 @@
         }
         header .text h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 20px;
         }
         header .text p {
             margin: 0;
-            font-size: 16px;
+            font-size: 14px;
             color: #9d794d;
         }
         nav {
@@ -53,18 +54,19 @@
             justify-content: center;
             background: #9d794d;
             padding: 10px 0;
+            flex-wrap: wrap;
         }
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 5px 10px;
             font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         .container {
-            max-width: 1200px;
+            max-width: 100%;
             margin: 20px auto;
             padding: 20px;
             background: #fff;
@@ -97,6 +99,25 @@
         }
         #contact-messenger li {
             margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            header .content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            header .logo img {
+                width: 120px;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+            .container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -160,16 +181,13 @@
         </ul>
     </div>
     <footer>
-        
-<p>
-    Контакты: <a href="mailto:simf@fasad-dizain.ru">simf@fasad-dizain.ru</a> | 
-    <a href="https://shop.fasad-dizain.ru/" target="_blank">Сайт фурнитуры</a> | 
-    <a href="https://fasad-dizain.ru/" target="_blank">Сайт мебельных фасадов</a> <br>
-    
-    г. Симферополь: +7 (978) 464-32-68, +7 (978) 782-22-68, +7 (978) 836-99-68<br>
-    г. Краснодар: +7 (918) 232-44-54, +7 (918) 232-40-33
-</p>
-
+        <p>
+            Контакты: <a href="mailto:simf@fasad-dizain.ru">simf@fasad-dizain.ru</a> |
+            <a href="https://shop.fasad-dizain.ru/" target="_blank">Сайт фурнитуры</a> |
+            <a href="https://fasad-dizain.ru/" target="_blank">Сайт мебельных фасадов</a> <br>
+            г. Симферополь: +7 (978) 464-32-68, +7 (978) 782-22-68, +7 (978) 836-99-68<br>
+            г. Краснодар: +7 (918) 232-44-54, +7 (918) 232-40-33
+        </p>
     </footer>
 </body>
 </html>
